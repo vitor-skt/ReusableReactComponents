@@ -53,7 +53,7 @@ function SideBar() {
                             <i className="fa-regular fa-folder"></i>
                             <span className="linksName">File Manager</span>
                         </a>
-                        <span className="toolTip">File Manager</span>
+                        <span className="toolTip">Files</span>
                     </li>
                     <li>
                         <a href="#">

@@ -79,10 +79,10 @@ body{
                 font-size: 1rem;
                 color: #fff;
             }
-            
+
             .toolTip{
                 position: absolute;
-                top: 50%;
+                top: 0;
                 transform: translateY(-50%);
                 border-radius: 0.4rem;
                 height: 2.1rem;
@@ -92,8 +92,22 @@ body{
                 box-shadow: 0 5px 10px rgba(0,0,0,0.2);
                 line-height: 2.1rem;
                 text-align: center;
+                transition: 0s;
+                opacity: 0;
+                pointer-events: none;
             }
 
+            &:hover{
+                .toolTip{
+                    top: 50%;
+                    transition: all 0.5s ease;
+                    opacity: 1;
+                }
+            }
+
+                
+            
+            
             a{
                 color: #fff;
                 display: flex;
