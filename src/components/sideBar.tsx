@@ -5,8 +5,7 @@ function SideBar() {
         <div className="sidebar">
             <div className="logoContent">
                 <div className="logo">
-                    <i className="fa-brands fa-github">
-                    </i>
+                    <i className="fa-brands fa-github"></i>
                     <div className="logoName">Model</div>
                 </div>
             </div>
