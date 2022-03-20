@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 body{
     position: relative;
@@ -54,4 +54,130 @@ body{
         transform: translateX(-50%);
     }
 
+    ul{
+        margin-top: 1.25rem;
+
+        li{
+            position: relative;
+            height: 3.12rem;
+            width: 100%;
+            margin: 0 0.3rem;
+            list-style: none;
+            line-height: 3.12rem;
+
+            input{
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                left: 0;
+                top: 0;
+                border-radius: 0.8rem;
+                outline: none;
+                border: none;
+                background: #222;
+                padding-left: 3.12rem;
+                font-size: 1rem;
+                color: #fff;
+            }
+            
+            a{
+                color: #fff;
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                transition: all 0.3s ease;
+                border-radius: 0.8rem;
+                
+                &:hover{
+                    background-color: #fff;
+                    color: #333;
+                }
+
+                i{
+                    height: 3.12rem;
+                    min-width: 3.12rem;
+                    border-radius: 0.8rem;
+                    line-height: 3.12rem;
+                    text-align: center;
+
+                    &.fa-magnifying-glass{
+                        position: absolute;
+                        z-index: 99;
+                        margin-top: 3.2rem;
+                        font-size: 1.2rem;
+                    }
+                }
+
+            }
+
+        }
+
+    }
+    .profileContent{
+        position: absolute;
+        color: #fff;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+
+        .profile{
+            position: relative;
+            padding: 0.6rem 0.3rem;
+            height: 3.9rem; 
+            background: #222;
+
+            .profileDetails{
+                display: flex;
+                align-items: center;
+
+                img{
+                    height: 2.5rem;
+                    width: 2.5rem;
+                    object-fit: cover;
+                    border-radius: 0.6rem;
+                }
+
+                .nameJob{
+                    margin-left: 0.6rem;
+                }
+
+                .name{
+                    font-size: 1rem;
+                    font-weight: 400;
+                }
+
+                .job{
+                    font-size: 0.7rem;
+                }
+
+            }
+
+            #logout{
+                position: absolute;
+                left: 88%;
+                bottom: 0.25rem;
+                transform: translateX(-50%);
+                min-width: 3.12rem;
+                line-height: 3.12rem;
+                font-size: 1.2rem;
+                border-radius: 0.8rem;
+            }
+
+        }
+
+    }
+}
+
+.homeContent{
+    position: absolute;
+    height: 100%;
+    width: calc(100% - 15rem);
+    left: 15rem;
+
+    .textArea {
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: #333;
+        margin-top: 0.7rem;
+    }
 }
