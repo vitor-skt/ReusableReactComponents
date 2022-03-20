@@ -18,63 +18,63 @@ function SideBar() {
                             <i className="fa-solid fa-magnifying-glass"></i>
                             <input type="text" placeholder="Search" />
                         </a>
-                        {/* <span className="toolTip">Dashboard</span> */}
+                        <span className="toolTip">Search</span>
                     </li>
                     <li>
                         <a href="#">
                             <i className="fa-brands fa-dev"></i>
                             <span className="linksName">Dashboard</span>
                         </a>
-                        {/* <span className="toolTip">Dashboard</span> */}
+                        <span className="toolTip">Dashboard</span>
                     </li>
                     <li>
                         <a href="#">
                             <i className="fa-regular fa-user"></i>
                             <span className="linksName">User</span>
                         </a>
-                        {/* <span className="toolTip">Dashboard</span> */}
+                        <span className="toolTip">User</span>
                     </li>
                     <li>
                         <a href="#">
                             <i className="fa-regular fa-message"></i>
                             <span className="linksName">Messages</span>
                         </a>
-                        {/* <span className="toolTip">Dashboard</span> */}
+                        <span className="toolTip">Messages</span>
                     </li>
                     <li>
                         <a href="#">
                             <i className="fa-solid fa-chart-pie"></i>
                             <span className="linksName">Analytics</span>
                         </a>
-                        {/* <span className="toolTip">Dashboard</span> */}
+                        <span className="toolTip">Analytics</span>
                     </li>
                     <li>
                         <a href="#">
                             <i className="fa-regular fa-folder"></i>
                             <span className="linksName">File Manager</span>
                         </a>
-                        {/* <span className="toolTip">Dashboard</span> */}
+                        <span className="toolTip">File Manager</span>
                     </li>
                     <li>
                         <a href="#">
                             <i className="fa-solid fa-cart-shopping"></i>
                             <span className="linksName">Order</span>
                         </a>
-                        {/* <span className="toolTip">Dashboard</span> */}
+                        <span className="toolTip">Order</span>
                     </li>
                     <li>
                         <a href="#">
                             <i className="fa-regular fa-heart"></i>
                             <span className="linksName">Saved</span>
                         </a>
-                        {/* <span className="toolTip">Dashboard</span> */}
+                        <span className="toolTip">Saved</span>
                     </li>
                     <li>
                         <a href="#">
                             <i className="fa-solid fa-gear"></i>
                             <span className="linksName">Settings</span>
                         </a>
-                        {/* <span className="toolTip">Dashboard</span> */}
+                        <span className="toolTip">Settings</span>
                     </li>
                 </ul>
                 <div className="profileContent">

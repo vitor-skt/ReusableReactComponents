@@ -80,6 +80,20 @@ body{
                 color: #fff;
             }
             
+            .toolTip{
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                border-radius: 0.4rem;
+                height: 2.1rem;
+                width: 7.6rem;
+                left: 7.6rem;
+                background: #fff;
+                box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+                line-height: 2.1rem;
+                text-align: center;
+            }
+
             a{
                 color: #fff;
                 display: flex;
@@ -178,6 +192,6 @@ body{
         font-size: 1.6rem;
         font-weight: 500;
         color: #333;
-        margin-top: 0.7rem;
+        margin: 0.7rem;
     }
 }
