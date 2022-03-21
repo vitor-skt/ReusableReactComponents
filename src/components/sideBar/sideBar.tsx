@@ -1,7 +1,13 @@
 import React from 'react'
 import './sideBar.scss';
+import { useRef } from 'react';
 
 function SideBar() {
+
+    const btn = useRef(null);
+    const sidebar = useRef(null);
+    const searchBtn = useRef(null);
+
     return (
         <>
             <div className="sidebar">
@@ -15,14 +21,14 @@ function SideBar() {
                 <ul className="navList">
                     <li>
                         <a href="#">
-                            <i className="fa-solid fa-magnifying-glass"></i>
+                            <i className="fa-solid fa-magnifying-glass" id="searchBtn" ref={searchBtn}></i>
                             <input type="text" placeholder="Search" />
                         </a>
                         <span className="toolTip">Search</span>
                     </li>
                     <li>
                         <a href="#">
-                            <i className="fa-brands fa-dev"></i>
+                            <i className="fa-brands fa-dev" ></i>
                             <span className="linksName">Dashboard</span>
                         </a>
                         <span className="toolTip">Dashboard</span>
