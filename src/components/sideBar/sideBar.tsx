@@ -1,27 +1,30 @@
 import React from 'react'
 import './sideBar.scss';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
+
 
 function SideBar() {
 
-    const btn = useRef(null);
-    const sidebar = useRef(null);
-    const searchBtn = useRef(null);
+    const [toggle, setToggle] = useState(false)
+
+    const toggleActive = () => {
+        toggle ? setToggle(false) : setToggle(true)
+    }
 
     return (
         <>
-            <div className="sidebar">
+            <div className={`sidebar ${toggle ? 'active' : ''}`}>
                 <div className="logoContent">
                     <div className="logo">
                         <i className="fa-brands fa-github"></i>
                         <div className="logoName">Model</div>
                     </div>
-                    <i className="fa-solid fa-bars" id="btn"></i>
+                    <i className="fa-solid fa-bars" id="btn" onClick={toggleActive}></i>
                 </div>
                 <ul className="navList">
                     <li>
                         <a href="#">
-                            <i className="fa-solid fa-magnifying-glass" id="searchBtn" ref={searchBtn}></i>
+                            <i className="fa-solid fa-magnifying-glass" id={`searchBtn ${toggle ? 'active' : ''}`} onClick={toggleActive}></i>
                             <input type="text" placeholder="Search" />
                         </a>
                         <span className="toolTip">Search</span>
