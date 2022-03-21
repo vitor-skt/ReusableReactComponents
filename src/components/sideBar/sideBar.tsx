@@ -94,8 +94,8 @@ function SideBar() {
                                 <div className="name">Vitor Oliveira</div>
                                 <div className="job">Front-End DEV</div>
                             </div>
-                            <i className="fa-solid fa-arrow-right-from-bracket" id="logout"></i>
                         </div>
+                        <i className="fa-solid fa-arrow-right-from-bracket" id="logout"></i>
                     </div>
                 </div>
             </div>

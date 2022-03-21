@@ -17,9 +17,10 @@ body{
     top: 0;
     left: 0;
     height: 100%;
-    width: 15rem;
+    width: 4.8rem;
     background: #333;
     padding: 0.37rem 0.87rem;
+    transition: all 0.5s ease;
 
     .logoContent{
         .logo{
@@ -28,6 +29,9 @@ body{
             height: 3.12rem;
             width: 100%;
             align-items: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.5s ease;
 
             & i{
                 font-size: 1.75rem;
@@ -44,7 +48,7 @@ body{
     #btn{
         color:#fff;
         position: absolute;
-        left:90%;
+        left:50%;
         top: 6px;
         font-size: 1.25rem;
         height: 3.12rem;
@@ -83,7 +87,7 @@ body{
             .toolTip{
                 position: absolute;
                 top: 0;
-                transform: translateY(-50%);
+                transform: translate(-50%, -50%);
                 border-radius: 0.4rem;
                 height: 2.1rem;
                 width: 7.6rem;
@@ -95,6 +99,7 @@ body{
                 transition: 0s;
                 opacity: 0;
                 pointer-events: none;
+                display: block;
             }
 
             &:hover{
@@ -115,6 +120,7 @@ body{
                 text-decoration: none;
                 transition: all 0.3s ease;
                 border-radius: 0.8rem;
+                white-space: nowrap;
                 
                 &:hover{
                     background-color: #fff;
@@ -133,6 +139,11 @@ body{
                         z-index: 99;
                         margin-top: 3.2rem;
                         font-size: 1.2rem;
+                        transition: all 0.5 ease;
+                        &:hover{
+                            background: #fff;
+                            color: #333;
+                        }
                     }
                 }
 
@@ -157,6 +168,9 @@ body{
             .profileDetails{
                 display: flex;
                 align-items: center;
+                opacity: 0;
+                pointer-events: none;
+                white-space: nowrap;
 
                 img{
                     height: 2.5rem;
@@ -182,25 +196,90 @@ body{
 
             #logout{
                 position: absolute;
-                left: 88%;
+                left: 50%;
                 bottom: 0.25rem;
                 transform: translateX(-50%);
                 min-width: 3.12rem;
                 line-height: 3.12rem;
                 font-size: 1.2rem;
                 border-radius: 0.8rem;
+                text-align: center;
             }
 
         }
 
     }
+    .linksName{
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.5s ease;
+    }
+}
+
+.sidebar.active{
+    width: 15rem;
+    
+    .logoContent{
+        .logo{
+            opacity: 1;
+            pointer-events: none;
+        }
+    }
+
+    #btn{
+        left:90%;
+    }
+
+    ul{
+        li{
+            .fa-magnifying-glass{
+                position: absolute;
+                z-index: 99;
+                margin-top: 3.2rem;
+                font-size: 1.2rem;
+                color: #fff;
+
+                &:hover{
+                    background: #222;
+                    color: #777
+                }
+            }
+            .toolTip{
+                display: none;
+            }
+        }
+     }
+    
+     .linksName{
+         opacity: 1;
+         pointer-events: auto;
+     }
+     .profileContent{
+         .profile{
+             background: none;
+             .profileDetails{
+                 opacity: 1;
+                 pointer-events: auto;
+             }
+
+             #logout{
+                 left: 88%;
+             }
+
+         }
+     }
+}
+.sidebar.active ~.homeContent{
+    width: calc(100% - 15rem);
+    left: 15rem;
 }
 
 .homeContent{
     position: absolute;
     height: 100%;
-    width: calc(100% - 15rem);
-    left: 15rem;
+    width: calc(100% - 4.85rem);
+    left: 4.85rem;
+    transition: all 0.5s ease;
 
     .textArea {
         font-size: 1.6rem;
