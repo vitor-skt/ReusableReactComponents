@@ -17,7 +17,7 @@ function SideBar() {
                 <div className="logoContent">
                     <div className="logo">
                         <i className="fa-brands fa-github"></i>
-                        <div className="logoName">Model</div>
+                        <div className="logoName">ReactSidebar</div>
                     </div>
                     <i className="fa-solid fa-bars" id="btn" onClick={toggleActive}></i>
                 </div>
