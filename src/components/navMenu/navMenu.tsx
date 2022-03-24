@@ -1,13 +1,13 @@
 import React from 'react'
 import './navMenu.scss';
 
+
 function NavMenu() {
     return (
         <>
 
             <nav>
                 <div className="navContent">
-
                     <div className="toggleBtn">
                         <i className="fa-solid fa-plus"></i>
                     </div>

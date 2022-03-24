@@ -12,7 +12,7 @@ body{
 
 nav{
     position: absolute;
-    top: 3.8rem;
+    top: 18.5rem;
     right: 18.5rem;
 
     .navContent{
@@ -26,11 +26,22 @@ nav{
             align-items: center;
             justify-content: center;
             border-radius: 50%;
+            box-shadow: 0 0 1.1rem 0 rgba(0, 0, 0, 0.2);
         }
         
         .toggleBtn{
             font-size: 2.1rem;
             color: #0e2431;
+        }
+
+        span{
+            a{
+            text-decoration: none;
+            }
+            i{
+                font-size: 1.7rem;
+                color: #0e2431;
+            }
         }
 
     }
