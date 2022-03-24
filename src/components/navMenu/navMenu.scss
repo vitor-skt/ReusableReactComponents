@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: #17a2b8;
+}
+
+
+nav{
+    position: absolute;
+    top: 3.8rem;
+    right: 18.5rem;
+
+    .navContent{
+
+
+        .toggleBtn, span a{
+            height: 3.8rem;
+            width: 3.8rem;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+        
+        .toggleBtn{
+            font-size: 2.1rem;
+            color: #0e2431;
+        }
+
+    }
+
+}
